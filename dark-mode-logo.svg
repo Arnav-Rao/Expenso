@@ -1,0 +1,6 @@
+<svg id="dark-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70 15H30C21.7157 15 15 21.7157 15 30V70C15 78.2843 21.7157 85 30 85H70C78.2843 85 85 78.2843 85 70V30C85 21.7157 78.2843 15 70 15Z" fill="#1E293B"/>
+                        <rect x="35" y="30" width="10" height="40" rx="5" fill="#475569"/>
+                        <rect x="50" y="45" width="10" height="25" rx="5" fill="#475569"/>
+                        <rect x="65" y="25" width="10" height="50" rx="5" fill="#06b6d4"/>
+                    </svg>

@@ -1,0 +1,67 @@
+<!--This page shows the list of expenses with all its details -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="dark-mode-logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenso-Transaction History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Side Navigation Menu  -->
+    <div id="overlay" class="hidden"></div>
+    <div id="sidenav" class="sidenav">
+      <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+      <a href="main.html">Dashboard</a>
+      <a href="viewer.html">All Expenses</a>
+      <a href="download.html">Download Data</a>
+      <a href="#" id="logout-button">Logout</a>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+       <a href="main.html"> <img height="65" src="dark-mode-logo.svg"></a>
+        <h1>Transaction History</h1>
+      </header>
+
+      <main>
+        <div class="card">
+          <h2>Transactions</h2>
+             <p>Logged in as: <span id="user-email-display"></span></p>
+          <!--Search Bar -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search by reason or payment method..."
+            />
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Reason</th>
+                  <th>Amount</th>
+                  <th>Payment Method</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="expenses-table-body">
+                <tr>
+                  <td colspan="5">Checking authentication...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="viewer_script.js"></script>
+  </body>
+</html>

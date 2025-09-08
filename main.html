@@ -1,0 +1,92 @@
+<!--This page contains the main dashboard which includes the total expenditure
+ along with a graph and the option to add expenses -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="dark-mode-logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenso-Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Menu -->
+    <div id="overlay" class="hidden"></div>
+    <div id="sidenav" class="sidenav">
+      <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+      <a href="main.html" class="active">Dashboard</a>
+      <a href="viewer.html">All Expenses</a>
+      <a href="download.html">Download Data</a>
+      <a href="#" id="logout-button">Logout</a>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <a href="main.html"> <img height="65" src="dark-mode-logo.svg" /></a>
+        <h1>Dashboard</h1>
+      </header>
+
+      <main>
+        <!-- view total spent-->
+        <div class="summary-grid">
+          <div class="card">
+            <h2>Total Spent</h2>
+            <div class="filter-container">
+              <select id="time-filter">
+                <option value="1">Today</option>
+                <option value="7">Last 7 Days</option>
+                <option value="30" selected>Last 30 Days</option>
+                <option value="90">Last 3 Months</option>
+                <option value="180">Last 6 Months</option>
+                <option value="365">Last Year</option>
+              </select>
+            </div>
+            <p id="total-spent" class="total-amount">₹0.00</p>
+          </div>
+          <div class="card">
+            <h2>Daily Spending Chart</h2>
+            <div id="chart-container" class="chart-container"></div>
+          </div>
+        </div>
+
+        <!-- Add New Expense -->
+        <div class="card">
+          <h2>Add New Expense</h2>
+          <form id="expense-form">
+            <div class="form-group">
+              <label for="amount">Amount (₹)</label>
+              <input type="number" id="amount" required />
+            </div>
+            <div class="form-group">
+              <label for="reason">Reason</label>
+              <input type="text" id="reason" required />
+            </div>
+            <div class="form-group">
+              <label for="method">Payment Method</label>
+              <select id="method">
+                <option>Cash</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>UPI</option>
+                <option>Net Banking</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <button type="submit" class="btn">Add Expense</button>
+          </form>
+          <p id="form-message"></p>
+        </div>
+      </main>
+    </div>
+
+    <a href="#expense-form" id="add-expense-fab" title="Add New Expense">+</a>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

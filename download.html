@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Data - Expense Tracker</title>
+    <link rel="stylesheet" href="download_style.css" />
+  </head>
+  <body>
+    <div id="sidenav" class="sidenav">
+      <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+      <a href="main.html">Dashboard</a>
+      <a href="viewer.html">All Expense</a>
+      <a href="download.html">Download Data</a>
+      <div id="logout-button">
+        <a href="#">Logout</a>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+
+    <div class="main-content">
+      <header>
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <a href="main.html"> <img height="65" src="dark-mode-logo.svg"></a>
+        <h1>Download Your Data</h1>
+      </header>
+
+      <div class="card">
+        <h2>Export Expenses</h2>
+        <p>
+          Click the button below to download a complete history of your expenses
+          as a CSV file, which can be opened with Microsoft Excel, Google
+          Sheets, or any other spreadsheet software.
+        </p>
+
+        <button id="download-btn" class="btn">Download as CSV</button>
+
+        <p id="download-status" class="status-message"></p>
+      </div>
+    </div>
+
+    <script type="module" src="download_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!--This page contains the login and sign up page.
+by default displaying the login screen-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="dark-mode-logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome-Expenso</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="auth-container">
+      <div class="card">
+        <!-- Login page -->
+        <div id="login-view">
+         <center> <img height="100" src="dark-mode-logo.svg"></center>
+          <h2> Login</h2>
+          <p>Welcome back! Please enter your details.</p>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" required />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" required />
+            </div>
+            <button type="submit" class="btn">Login</button>  
+            <p id="login-error" class="error-message"></p>
+          </form>
+          <p class="auth-link">
+            Don't have an account? <a href="#" id="show-signup-link">Sign Up</a>
+          </p>
+        </div>
+
+        <!-- Signup page -->
+        <div id="signup-view" class="hidden">
+          <center> <img height="100" src="dark-mode-logo.svg"></center>
+          <h2>Create Account</h2>
+          <p>Join us by creating a new account.</p>
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" required />
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <p id="signup-error" class="error-message"></p>
+          </form>
+          <p class="auth-link">
+            Already have an account? <a href="#" id="show-login-link">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

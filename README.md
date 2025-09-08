@@ -1,20 +1,20 @@
 # Expenso
-A web application designed to track one's day-to-day expenses
+A web application designed to track day-to-day expenses
 
-This web app provides an easy and interactive way to upload and track your expenses<BR/>
+This web app provides an easy and interactive way to upload and track expenses<BR/>
 
 # Features
 * Shows total spent for custom durations of time
-* A graph gives a visual representation of one's expenditure 
-* Gives you the option to view past transactions
-* Provides the user with the option of downloading their transaction history <BR/>
+* A graph gives a visual representation of the expenditure 
+* Gives the option to view past transactions
+* Provides the option to download transaction history <BR/>
 
 # How to Run<BR/>
 
 >## Using existing Firebase database
 
   1. Download all files in the repository and save them in the same folder
-  2. Run index.html using localhost (Usage of localhost is REQUIRED for the login authentication to work correctly)
+  2. Open index.html using localhost (Usage of localhost is REQUIRED for the login authentication to work correctly)
 
    **NOTE: Any form of hosting will work**
 
@@ -33,7 +33,7 @@ This will be the main container for your app's backend services
 
 2. Click on "Add project" or "Create a project"
 
-3. Enter a name for your project (eg, "My-Expense-Tracker") and click "Continue"
+3. Enter a name for your project (eg, "Expenso") and click "Continue"
 
 4. You can disable Google Analytics for this project to simplify the setup process
 
